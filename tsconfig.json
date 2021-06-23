@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "strict": true,
+    "noImplicitAny": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"],
+      "@common/*": ["./src/core/common/*"],
+      "@domain/*": ["./src/core/domain/*"],
+      "@controllers/*": ["./src/app/controllers/*"],
+      "@config/*": ["./src/main/config/*"],
+      "@main/*": ["./src/main/*"]
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
