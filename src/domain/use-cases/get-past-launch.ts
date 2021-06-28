@@ -7,12 +7,15 @@ export class getPastLaunchUseCase implements IUseCase{
 
   async handle() {
     const response = await this.repository.past()
-    return response
-    // return new Launch(
-    //   response.id, 
-    //   response.name, 
-    //   response.date_local, 
-    //   response.links.patch.small
-    // )
+    return response.map(
+      function(item: any) {
+        return new Launch(
+          item.id, 
+          item.name, 
+          item.date_local, 
+          item.links.patch.small
+        )
+      }
+    )
   }
 }
