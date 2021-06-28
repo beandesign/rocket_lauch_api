@@ -8,19 +8,23 @@ export class SpacexRepository implements ILaunchRepository {
   ) {}
 
   async next() {
-    return await this.fetcher.get('/launches/next')
+    const response = await this.fetcher.get('/launches/next')
+    return response.data
   }
 
   async latest() {
-    return await this.fetcher.get('/launches/latest')
+    const response = await this.fetcher.get('/launches/latest')
+    return response.data
   }
 
   async upcoming() {
-    return await this.fetcher.get('/launches/upcoming')
+    const response = await this.fetcher.get('/launches/upcoming')
+    return response.data
   }
 
   async past() {
-    return await this.fetcher.get('/launches/past')
+    const response = await this.fetcher.get('/launches/past')
+    return response.data
   }
 
 }
