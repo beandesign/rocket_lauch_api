@@ -13,7 +13,8 @@ export class getPastLaunchUseCase implements IUseCase{
           item.id, 
           item.name, 
           item.date_local, 
-          item.links.patch.small
+          item.links.patch.small,
+          item.links.webcast
         )
       }
     )

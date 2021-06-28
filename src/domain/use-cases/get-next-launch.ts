@@ -11,7 +11,8 @@ export class getNextLaunchUseCase implements IUseCase{
       response.id, 
       response.name, 
       response.date_local, 
-      response.links.patch.small
+      response.links.patch.small,
+      response.links.webcast
     )
   }
 }

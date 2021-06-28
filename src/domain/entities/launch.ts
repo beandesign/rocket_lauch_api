@@ -4,6 +4,7 @@ export class Launch {
     public _id: string,
     public name: string,
     public date: string,
-    public patch: string
+    public patch: string,
+    public video: string
   ) {}
 }
