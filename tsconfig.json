@@ -9,8 +9,8 @@
     "baseUrl": ".",
     "paths": {
       "*": ["node_modules/*"],
-      "@common/*": ["./src/core/common/*"],
-      "@domain/*": ["./src/core/domain/*"],
+      "@domain/*": ["./src/domain/*"],
+      "@repositories/*": ["./src/infra/repositories/*"],
       "@controllers/*": ["./src/app/controllers/*"],
       "@config/*": ["./src/main/config/*"],
       "@main/*": ["./src/main/*"]
